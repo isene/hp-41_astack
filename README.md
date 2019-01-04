@@ -1,6 +1,6 @@
 # hp-41_astack
 
-## Creates a 4 level "Alpha stack" for the HP-41 and supplies the routines APUSH and APOP
+### Creates a 4 level "Alpha stack" for the HP-41 and supplies the routines APUSH and APOP
 
 This program requires an HP-41 calculator with eXtended Memoory.
 
