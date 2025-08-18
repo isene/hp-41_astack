@@ -1,5 +1,10 @@
 # hp-41_astack
 
+[![HP-41](https://img.shields.io/badge/HP--41-Calculator-orange)](https://en.wikipedia.org/wiki/HP-41C)
+[![License](https://img.shields.io/badge/License-Public%20Domain-brightgreen.svg)](https://unlicense.org/)
+[![GitHub stars](https://img.shields.io/github/stars/isene/hp-41_astack.svg)](https://github.com/isene/hp-41_astack/stargazers)
+[![Stay Amazing](https://img.shields.io/badge/Stay-Amazing-blue.svg)](https://isene.org)
+
 ### Creates a 4 level "Alpha stack" for the HP-41 and supplies the routines APUSH and APOP
 
 This program requires an HP-41 calculator with eXtended Memoory.
