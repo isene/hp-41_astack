@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="200" fill="#1a1a2e"/>
+  
+  <!-- HP-41 Calculator -->
+  <g transform="translate(100, 100)">
+    <!-- Calculator body -->
+    <rect x="-45" y="-50" width="90" height="120" rx="8" fill="#2c2c2c" stroke="#444" stroke-width="2"/>
+    
+    <!-- LCD Display -->
+    <rect x="-40" y="-40" width="80" height="20" rx="3" fill="#0a4d0a" stroke="#333" stroke-width="1"/>
+    <text x="0" y="-27" font-family="monospace" font-size="10" fill="#00ff00" text-anchor="middle">ALPHA STACK</text>
+    
+    <!-- Extended Memory indicator -->
+    <rect x="35" y="-45" width="8" height="8" fill="#ff6600" rx="1"/>
+    <text x="39" y="-40" font-family="monospace" font-size="4" fill="#fff" text-anchor="middle">XM</text>
+    
+    <!-- Alpha Stack Visualization (right side) -->
+    <g transform="translate(50, -10)">
+      <text x="0" y="-15" font-family="monospace" font-size="6" fill="#fff" text-anchor="middle">Alpha Stack</text>
+      
+      <!-- Stack levels -->
+      <rect x="-15" y="-5" width="30" height="8" fill="#4a90e2" stroke="#666" stroke-width="1" rx="1">
+        <animate attributeName="fill" values="#4a90e2;#66b3ff;#4a90e2" dur="3s" repeatCount="indefinite"/>
+      </rect>
+      <text x="0" y="0" font-family="monospace" font-size="4" fill="#fff" text-anchor="middle">"HELLO"</text>
+      
+      <rect x="-15" y="5" width="30" height="8" fill="#5cb85c" stroke="#666" stroke-width="1" rx="1">
+        <animate attributeName="fill" values="#5cb85c;#7dd87d;#5cb85c" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+      </rect>
+      <text x="0" y="10" font-family="monospace" font-size="4" fill="#fff" text-anchor="middle">"WORLD"</text>
+      
+      <rect x="-15" y="15" width="30" height="8" fill="#f0ad4e" stroke="#666" stroke-width="1" rx="1">
+        <animate attributeName="fill" values="#f0ad4e;#ffcc7a;#f0ad4e" dur="3s" begin="1s" repeatCount="indefinite"/>
+      </rect>
+      <text x="0" y="20" font-family="monospace" font-size="4" fill="#fff" text-anchor="middle">"TEST"</text>
+      
+      <rect x="-15" y="25" width="30" height="8" fill="#d9534f" stroke="#666" stroke-width="1" rx="1">
+        <animate attributeName="fill" values="#d9534f;#ff7a7a;#d9534f" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+      </rect>
+      <text x="0" y="30" font-family="monospace" font-size="4" fill="#fff" text-anchor="middle">"DATA"</text>
+      
+      <!-- Stack arrows -->
+      <path d="M 18,0 L 25,0 L 22,-3 M 25,0 L 22,3" stroke="#00ff00" stroke-width="1" fill="none" opacity="0">
+        <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    
+    <!-- Keyboard -->
+    <g fill="#1a1a1a" stroke="#666" stroke-width="0.5">
+      <!-- Simplified keyboard layout -->
+      <rect x="-35" y="0" width="12" height="8" rx="1"/>
+      <rect x="-20" y="0" width="12" height="8" rx="1"/>
+      <rect x="-5" y="0" width="12" height="8" rx="1"/>
+      <rect x="10" y="0" width="12" height="8" rx="1"/>
+      <rect x="25" y="0" width="12" height="8" rx="1"/>
+      
+      <rect x="-35" y="10" width="12" height="8" rx="1"/>
+      <rect x="-20" y="10" width="12" height="8" rx="1"/>
+      <rect x="-5" y="10" width="12" height="8" rx="1"/>
+      <rect x="10" y="10" width="12" height="8" rx="1"/>
+      <rect x="25" y="10" width="12" height="8" rx="1"/>
+      
+      <rect x="-35" y="20" width="12" height="8" rx="1"/>
+      <rect x="-20" y="20" width="12" height="8" rx="1"/>
+      <rect x="-5" y="20" width="12" height="8" rx="1"/>
+      <rect x="10" y="20" width="12" height="8" rx="1"/>
+      <rect x="25" y="20" width="12" height="8" rx="1"/>
+    </g>
+    
+    <!-- Key labels -->
+    <g font-family="monospace" font-size="4" fill="#fff" text-anchor="middle">
+      <text x="-29" y="6">Σ+</text>
+      <text x="-14" y="6">7</text>
+      <text x="1" y="6">8</text>
+      <text x="16" y="6">9</text>
+      <text x="31" y="6">÷</text>
+      
+      <text x="-29" y="16">1/x</text>
+      <text x="-14" y="16">4</text>
+      <text x="1" y="16">5</text>
+      <text x="16" y="16">6</text>
+      <text x="31" y="16">×</text>
+      
+      <text x="-29" y="26">y^x</text>
+      <text x="-14" y="26">1</text>
+      <text x="1" y="26">2</text>
+      <text x="16" y="26">3</text>
+      <text x="31" y="26">-</text>
+    </g>
+    
+    <!-- ALPHA key highlight -->
+    <rect x="-35" y="30" width="25" height="8" fill="#ff6600" stroke="#cc5200" stroke-width="1" rx="1">
+      <animate attributeName="fill" values="#ff6600;#ff9966;#ff6600" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="-22.5" y="36" font-family="monospace" font-size="5" fill="#fff" text-anchor="middle">ALPHA</text>
+  </g>
+  
+  <!-- Stack operations visualization -->
+  <g transform="translate(40, 40)" opacity="0.8">
+    <text x="0" y="0" font-family="monospace" font-size="8" fill="#00ff00">APUSH</text>
+    <path d="M 35,0 L 50,0 L 47,-3 M 50,0 L 47,3" stroke="#00ff00" stroke-width="2" fill="none">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+    
+    <text x="0" y="20" font-family="monospace" font-size="8" fill="#ff6600">APOP</text>
+    <path d="M 50,20 L 35,20 L 38,17 M 35,20 L 38,23" stroke="#ff6600" stroke-width="2" fill="none">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" begin="0.75s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Extended Memory file representation -->
+  <g transform="translate(40, 140)" opacity="0.6">
+    <rect x="0" y="0" width="40" height="25" fill="#333" stroke="#666" stroke-width="1" rx="2"/>
+    <text x="20" y="8" font-family="monospace" font-size="6" fill="#fff" text-anchor="middle">ASTACK</text>
+    <text x="20" y="16" font-family="monospace" font-size="5" fill="#ccc" text-anchor="middle">XM File</text>
+    <text x="20" y="22" font-family="monospace" font-size="4" fill="#999" text-anchor="middle">4 Levels</text>
+  </g>
+  
+  <!-- Text -->
+  <text x="100" y="185" font-family="monospace" font-size="16" fill="#fff" text-anchor="middle" font-weight="bold">HP-41 AStack</text>
+  <text x="100" y="197" font-family="monospace" font-size="9" fill="#888" text-anchor="middle">Alpha Stack Management</text>
+</svg>
